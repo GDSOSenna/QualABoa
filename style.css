@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --white-cream: #EFEFEF;
+    --purple-text: hsla(264, 11%, 26%, 0.011);
+    --light-gray: #D9D9D9;
+    --purple-border-icon: #4A1696;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--white-cream);
+    font-family: "Libre Franklin", sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+}
+
+
+/* Página de Acesso */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-style: italic;
+    font-weight: 350;
+    letter-spacing: -5px;
+    font-size: 48px;
+    padding: 70px 20px 70px 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textBox{
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+    height: 35px;
+    width: 200px;
+    border: 0px solid;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    background-color: var(--light-gray);
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.reset{
+    font-size: 8px;
+    font-weight: bold;
+    color: #423C4B;
+}
+
+.entrar, .criarAcesso, .criarConta{
+    font-weight: 700;
+    font-size: 10px;
+    color: #efefef;
+    background-color: #7720f5;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.31) 0px 4px 4px 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 35px;
+    width: 125px;
+    text-align: center;
+}
+
+.midias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.line{
+    width: 300px;
+    height: 1px;
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 0 0;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+
+/* Página de Cadastro */
+
+.voltar{
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    width: 100%;
+    color: #000000;
+    border: 0 ;
+    font-style: italic;
+    font-weight: 350;
+    letter-spacing: -2px;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+}
+
+#criarUsuario{
+    display: flex;
+    align-items: center;
+}
+
+.criarUsuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0 20px 0;
+}
+
+.checkTermos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px 0 10px 0;
+    gap: 10px;
+}
+
+.termos{
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #423C4B;
+}
+
+#termos{
+    width: 10px;
+    height: 10px;
+}
+
+h2{
+    margin: 20px 0 40px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footCadastro{
+    margin: 0;
+    height: 100%;
+}
+
+/* Página inicial */
+
+.RodapeInicial{
+    position:   fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+nav{
+    width: 100%;
+    background-color: #dfdfdf;
+}
+
+li{
+    list-style-type: none;
+    background-color: #dfdfdf;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 10px 10px 10px;
+    background-color: #dfdfdf;
+    border-top: 0.5px #0000003a solid;
+}
+
+#icon{
+    background-color: #dfdfdf;
+}
+
+.blank{
+    height: 460px;
+}
+
+/* Criar evento */
+
+.cadastroEvento{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nome-evento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#nome-evento{
+    width: 300px;
+}
+
+.data-horario{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+#data, #horario{
+    width: 142px;
+    margin: 5px;
+}
+
+.localizacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D107C;
+    width: 2000px;
+    gap: 16px;
+}
+
+#localizacao{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #3D107C;
+    margin: 20px 0 16px 0;
+}
+
+#endereco{
+    width: 300px;
+}
+
+.cep-cidade{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    background-color: #3D107C;
+}
+
+#cep, #cidade{
+    width: 142px;
+    margin: 5px;
+}
+
+.estado-referencia{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    background-color: #3D107C;
+}
+
+#estado, #referencia{
+    width: 142px;
+    margin: 5px 5px 25px 5px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#informacoes{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom:10px;
+}
+
+.tipo-idade{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+#tipo, #idade{
+    width: 142px;
+    margin: 5px;
+}
+
+#descricao{
+    width: 300px;
+    height: 100px;
+    margin:  0 5px 100px 5px;
+}
+
+.textBox:focus{
+    border:none ;
+}

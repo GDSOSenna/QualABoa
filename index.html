@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a Boa?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>QUAL A BOA?</h1>
+    </header>
+    <main>
+        <form class="login" id="login">
+
+            <input type="text" id="user" required aria-required="true" placeholder="Email ou Usuário" class="textBox">
+
+            <input type="password" id="pass" required aria-required="true" placeholder="Senha" class="textBox">
+
+            <a class="reset" href="">ESQUECEU A SENHA?</a>
+
+            <input type="submit" value="Entrar" onclick="entrar()" class="entrar">
+            <div class="midias">
+                <img src="src/google.svg" alt="google icon">
+                <img src="src/Facebook.svg" alt="facebook icon">
+            </div>
+            <div class="line"></div>
+            <input type="button" value="Criar acesso" onclick="criarAcesso()" class="criarAcesso">
+        </form>
+    </main>
+    <footer>
+        <p>QUAL A BOA?©️2024</p>
+    </footer>
+</body>
+</html>
